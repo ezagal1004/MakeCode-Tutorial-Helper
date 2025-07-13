@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,24 +28,24 @@ export default function RootLayout({
                   </h1>
                 </div>
                 <nav className="flex space-x-4">
-                  <a 
+                  <Link 
                     href="/" 
                     className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="/learn" 
                     className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Learn How
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="/create" 
                     className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Create Tutorial
-                  </a>
+                  </Link>
                 </nav>
               </div>
             </div>
